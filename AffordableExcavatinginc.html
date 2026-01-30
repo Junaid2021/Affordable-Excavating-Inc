@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Affordable Excavating Inc provides professional commercial and residential excavating and demolition services throughout Grand Rapids and West Michigan since 1999.">
+    <meta name="keywords" content="Demolition services in Grand Rapids, MI, water sewer excavation services in Grand Rapids, excavation contractor near me, Excavation services in Grand Rapids, MI, Grand Rapids">
+    <title>Affordable Excavating Inc | Professional Excavation & Demolition Services in Grand Rapids, MI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a3a6c;
+            --secondary: #e67e22;
+            --dark: #2c3e50;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --success: #28a745;
+            --white: #ffffff;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            transition: var(--transition);
+            border: 2px solid var(--secondary);
+            cursor: pointer;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        
+        .btn:hover {
+            background: #d35400;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-primary {
+            background: var(--secondary);
+            border-color: var(--secondary);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--secondary);
+            border-color: var(--secondary);
+            margin-left: 15px;
+        }
+        
+        .btn-secondary:hover {
+            background: var(--secondary);
+            color: var(--white);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border-color: var(--white);
+            color: var(--white);
+            margin-left: 15px;
+        }
+        
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary);
+        }
+        
+        section {
+            padding: 100px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 4px;
+            background: var(--secondary);
+            border-radius: 2px;
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            margin-top: 20px;
+            font-size: 18px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 15px 0;
+            transition: var(--transition);
+        }
+        
+        header.scrolled {
+            background: var(--white);
+            box-shadow: var(--shadow);
+            padding: 10px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--white);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        header.scrolled .logo {
+            color: var(--primary);
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .logo-icon {
+            margin-right: 10px;
+            font-size: 32px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: var(--transition);
+            position: relative;
+            padding: 5px 0;
+        }
+        
+        header.scrolled .nav-links a {
+            color: var(--dark);
+        }
+        
+        .nav-links a:hover, 
+        .nav-links a.active {
+            color: var(--secondary);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: var(--transition);
+        }
+        
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        header.scrolled .hamburger {
+            color: var(--dark);
+        }
+        
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(rgba(26, 58, 108, 0.85), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-top: 80px;
+        }
+        
+        .hero-content h1 {
+            font-size: 52px;
+            margin-bottom: 25px;
+            color: var(--white);
+            text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .hero-content p {
+            font-size: 22px;
+            margin-bottom: 40px;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        /* Trust Section */
+        #trust {
+            background: var(--light);
+            text-align: center;
+        }
+        
+        .trust-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        
+        .trust-item {
+            padding: 25px 20px;
+            min-width: 200px;
+            margin: 15px;
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .trust-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .trust-icon {
+            font-size: 42px;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+        
+        .trust-number {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--primary);
+            display: block;
+            margin: 10px 0;
+        }
+        
+        .trust-text {
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        /* About Section */
+        #about {
+            background: var(--white);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h2 {
+            font-size: 38px;
+            margin-bottom: 25px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 17px;
+        }
+        
+        .about-stats {
+            display: flex;
+            margin-top: 30px;
+        }
+        
+        .stat-item {
+            margin-right: 40px;
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--secondary);
+            display: block;
+        }
+        
+        .stat-text {
+            font-weight: 600;
+            color: var(--gray);
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            height: 450px;
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1541888946425-d81bb74d66a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        /* Services Section */
+        #services {
+            background: var(--light);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .service-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-icon {
+            height: 80px;
+            width: 100%;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: var(--white);
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-content h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        /* Process Section */
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+            position: relative;
+        }
+        
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            width: 80%;
+            height: 3px;
+            background: var(--secondary);
+            z-index: 1;
+            display: none;
+        }
+        
+        .process-item {
+            text-align: center;
+            width: 25%;
+            min-width: 200px;
+            padding: 0 15px;
+            margin-bottom: 50px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .process-number {
+            width: 80px;
+            height: 80px;
+            background: var(--secondary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 auto 25px;
+            border: 5px solid var(--white);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .process-item h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        /* Why Choose Us */
+        #why-us {
+            background: var(--white);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-item {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 8px;
+            background: var(--light);
+            transition: var(--transition);
+        }
+        
+        .feature-item:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .feature-item:hover h3, 
+        .feature-item:hover .feature-icon {
+            color: var(--white);
+        }
+        
+        .feature-icon {
+            font-size: 42px;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+        
+        .feature-item h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--dark);
+            transition: var(--transition);
+        }
+        
+        /* Equipment Section */
+        #equipment {
+            background: var(--light);
+        }
+        
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        
+        .equipment-item {
+            background: var(--white);
+            padding: 25px 15px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .equipment-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .equipment-icon {
+            font-size: 48px;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .equipment-item h3 {
+            font-size: 20px;
+        }
+        
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .testimonial-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            position: relative;
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            font-size: 80px;
+            color: rgba(230, 126, 34, 0.15);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            font-size: 17px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-info h4 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            color: var(--gray);
+            font-weight: 600;
+        }
+        
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 50px auto 0;
+        }
+        
+        .faq-item {
+            background: var(--white);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px 25px;
+            font-weight: 700;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background: var(--light);
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .faq-question:hover {
+            background: #e9ecef;
+        }
+        
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 20px 25px;
+            max-height: 500px;
+        }
+        
+        .faq-toggle {
+            font-size: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        
+        /* CTA Section */
+        #cta {
+            background: linear-gradient(rgba(26, 58, 108, 0.9), rgba(44, 62, 80, 0.95)), url('https://images.unsplash.com/photo-1505938313122-4a8e4e5b7d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .cta-content {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            font-size: 42px;
+            margin-bottom: 25px;
+            color: var(--white);
+        }
+        
+        .cta-content p {
+            font-size: 22px;
+            margin-bottom: 40px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            margin-top: 50px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        
+        .contact-icon {
+            min-width: 50px;
+            height: 50px;
+            background: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--white);
+            flex-shrink: 0;
+        }
+        
+        .contact-text h3 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+        
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--secondary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.2);
+        }
+        
+        .contact-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 70px 0 0;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-col h3 {
+            color: var(--white);
+            font-size: 22px;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--secondary);
+        }
+        
+        .footer-col p {
+            margin: 15px 0;
+            line-height: 1.7;
+        }
+        
+        .footer-links {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            display: block;
+            padding: 5px 0;
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary);
+            transform: translateX(5px);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            transition: var(--transition);
+            font-size: 18px;
+        }
+        
+        .social-links a:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding: 25px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 16px;
+            margin-top: 30px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .about-image {
+                width: 100%;
+                height: 400px;
+            }
+            
+            .process-item {
+                width: 50%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                right: -100%;
+                width: 80%;
+                height: calc(100vh - 80px);
+                background: var(--white);
+                flex-direction: column;
+                align-items: center;
+                padding-top: 40px;
+                transition: var(--transition);
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+            }
+            
+            .nav-links a {
+                color: var(--dark);
+                font-size: 22px;
+            }
+            
+            .hero-content h1 {
+                font-size: 42px;
+            }
+            
+            .hero-content p {
+                font-size: 19px;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-secondary {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+            
+            .process-steps::before {
+                display: none;
+            }
+            
+            .process-item {
+                width: 100%;
+            }
+            
+            section {
+                padding: 70px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 32px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 36px;
+            }
+            
+            .hero-content p {
+                font-size: 17px;
+            }
+            
+            .btn {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+            
+            .section-title h2 {
+                font-size: 28px;
+            }
+            
+            .trust-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .trust-item {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <i class="fas fa-digging fa-lg logo-icon"></i>
+                    Affordable <span>Excavating</span> Inc
+                </a>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Excavation & Demolition Services in Grand Rapids, MI</h1>
+                <p>Affordable, reliable excavating contractor serving West Michigan since 1999. Free estimates for residential and commercial projects.</p>
+                <div class="hero-btns">
+                    <a href="tel:616-262-1301" class="btn btn-primary">Call for Free Estimate</a>
+                    <a href="#services" class="btn btn-secondary">View Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section id="trust">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Clients Trust Us</h2>
+                <p>With over two decades of experience, we've built a reputation for reliability, safety, and exceptional service throughout West Michigan.</p>
+            </div>
+            <div class="trust-container">
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <span class="trust-number">Since 1999</span>
+                    <div class="trust-text">Serving Grand Rapids</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <span class="trust-number">100%</span>
+                    <div class="trust-text">Licensed & Insured</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="trust-number">5-Star</span>
+                    <div class="trust-text">Rated Service</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <span class="trust-number">500+</span>
+                    <div class="trust-text">Projects Completed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Family-Owned Excavating Experts Since 1999</h2>
+                    <p>Affordable Excavating Inc. has provided professional commercial and residential excavating and demolition services throughout Grand Rapids and West Michigan since 1999. We specialize in house demolition, structure removal, selective demolition, pool removal, grading, and site preparation for residential and commercial projects.</p>
+                    <p>Our services also include commercial and residential excavating, water and sewer excavation, septic tank removal and repair, and storm water drain excavation. Known as a reliable excavating contractor in Grand Rapids, MI, we deliver safe, efficient, and dependable results.</p>
+                    <p>Call today for a free estimate and experience service that exceeds expectations.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">27+</span>
+                            <span class="stat-text">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">West Michigan</span>
+                            <span class="stat-text">Service Area</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Excavation Services</h2>
+                <p>We provide comprehensive excavating and demolition solutions for both residential and commercial properties throughout Grand Rapids and West Michigan.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>House Demolition</h3>
+                        <p>Complete residential demolition services with careful debris removal and site cleanup. We handle all permits and regulations.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Water & Sewer Excavation</h3>
+                        <p>Professional excavation for water line installation, sewer repairs, and utility access with minimal landscape disruption.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Pool Removal</h3>
+                        <p>Full or partial pool removal services including excavation, backfilling, and site restoration for a clean, usable yard.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dump-truck"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Site Preparation</h3>
+                        <p>Grading, clearing, and excavation services to prepare your property for new construction, landscaping, or development projects.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-toilet"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Septic Services</h3>
+                        <p>Septic tank removal, repair, and replacement with professional excavation and restoration of your property.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Storm Drain Excavation</h3>
+                        <p>Installation and repair of storm water drainage systems to prevent flooding and protect your property from water damage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Simple Process</h2>
+                <p>We make excavation and demolition projects straightforward with our proven 5-step approach to ensure your project runs smoothly from start to finish.</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-item">
+                    <div class="process-number">1</div>
+                    <h3>Free Consultation</h3>
+                    <p>We discuss your project needs and provide a detailed estimate at no cost.</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">2</div>
+                    <h3>Site Assessment</h3>
+                    <p>Our team evaluates your property to plan the safest and most efficient approach.</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">3</div>
+                    <h3>Permit Handling</h3>
+                    <p>We secure all necessary permits and approvals to ensure compliance with local regulations.</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">4</div>
+                    <h3>Professional Execution</h3>
+                    <p>Our experienced crew completes the work safely, efficiently, and with minimal disruption.</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">5</div>
+                    <h3>Site Cleanup</h3>
+                    <p>We leave your property clean and ready for the next phase of your project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Affordable Excavating</h2>
+                <p>We stand out from other excavating contractors in Grand Rapids through our commitment to quality, safety, and customer satisfaction.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>27+ Years Experience</h3>
+                    <p>Serving West Michigan since 1999 with proven expertise in all types of excavation projects.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Fully Insured</h3>
+                    <p>Complete liability coverage and workers' compensation for your peace of mind and protection.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Free Estimates</h3>
+                    <p>No hidden fees or surprise costs. We provide transparent, competitive pricing upfront.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>On-Time Completion</h3>
+                    <p>We respect your schedule and complete projects efficiently without compromising quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section id="equipment">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Modern Equipment</h2>
+                <p>We maintain a fleet of well-serviced, modern equipment to handle projects of any size efficiently and safely.</p>
+            </div>
+            <div class="equipment-grid">
+                <div class="equipment-item">
+                    <div class="equipment-icon">
+                        <i class="fas fa-tractor"></i>
+                    </div>
+                    <h3>Excavators</h3>
+                </div>
+                <div class="equipment-item">
+                    <div class="equipment-icon">
+                        <i class="fas fa-dump-truck"></i>
+                    </div>
+                    <h3>Dump Trucks</h3>
+                </div>
+                <div class="equipment-item">
+                    <div class="equipment-icon">
+                        <i class="fas fa-people-carry"></i>
+                    </div>
+                    <h3>Bulldozers</h3>
+                </div>
+                <div class="equipment-item">
+                    <div class="equipment-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Skid Steers</h3>
+                </div>
+                <div class="equipment-item">
+                    <div class="equipment-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Trenchers</h3>
+                </div>
+                <div class="equipment-item">
+                    <div class="equipment-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Compactors</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>Don't just take our word for it - hear what our satisfied clients have to say about their experience with Affordable Excavating Inc.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Affordable Excavating removed our old inground pool quickly and cleanly. They were professional, on-time, and the price was fair. I highly recommend them for any demolition project!</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Michael Reynolds</h4>
+                            <p>Grand Rapids Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">We hired Affordable Excavating for site preparation on our new commercial building. Their team was efficient, communicative, and left the site perfectly graded. We'll definitely use them again for future projects.</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Project Manager, West MI Development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">After getting quotes from several companies, Affordable Excavating provided the best value and most professional assessment. They handled our septic tank removal with care and expertise. Excellent service from start to finish!</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>David Thompson</h4>
+                            <p>Byron Center Resident</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our excavation and demolition services in the Grand Rapids area.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you provide free estimates?
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer free, no-obligation estimates for all our excavation and demolition services. We'll visit your property, assess the project, and provide a detailed quote with transparent pricing.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Are you licensed and insured?
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. Affordable Excavating Inc. is fully licensed, bonded, and insured to operate in Michigan. We carry comprehensive liability insurance and workers' compensation to protect both our team and your property.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long does a typical project take?
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project timelines vary based on scope and complexity. Small residential projects like pool removals typically take 2-4 days, while larger commercial excavations may take several weeks. We provide a detailed timeline during our estimate and work efficiently to complete projects on schedule.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you handle permits and regulations?
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we handle all necessary permits and ensure compliance with local regulations and building codes. We have extensive experience navigating Grand Rapids and West Michigan permitting processes to make your project hassle-free.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What areas do you serve?
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We serve Grand Rapids and all of West Michigan, including Holland, Muskegon, Kalamazoo, Battle Creek, and surrounding communities. Contact us to confirm service availability for your specific location.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Excavation Project?</h2>
+                <p>Contact Affordable Excavating Inc today for a free, no-obligation estimate. With over 27 years of experience serving Grand Rapids and West Michigan, you can trust us to deliver safe, efficient, and dependable results.</p>
+                <a href="tel:616-262-1301" class="btn btn-primary">Call Now: (616) 262-1301</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us Today</h2>
+                <p>Reach out for a free estimate or to discuss your excavation or demolition project needs. We respond promptly to all inquiries.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Our Location</h3>
+                            <p>1150 Freeman Avenue Southwest<br>Grand Rapids, MI 49503</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Call Us</h3>
+                            <p><a href="tel:616-262-1301" style="color:#333;text-decoration:none">(616) 262-1301</a></p>
+                            <p>Monday-Friday: 7:00 AM - 6:00 PM<br>Saturday: 8:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Service Area</h3>
+                            <p>Grand Rapids and all of West Michigan including Holland, Muskegon, Kalamazoo, and Battle Creek.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xayvkwgk" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Project Details" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Request Free Estimate</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Affordable Excavating Inc</h3>
+                    <p>Professional commercial and residential excavating and demolition services throughout Grand Rapids and West Michigan since 1999.</p>
+                    <div class="social-links">
+                        <a href="https://www.affordable-excavating.com/" target="_blank" aria-label="Website">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                        <a href="https://g.page/r/CX30EWyc7MqBEBM/" target="_blank" aria-label="Google Business Profile">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="https://x.com/excavating_MI" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#process">Our Process</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">House Demolition</a></li>
+                        <li><a href="#services">Pool Removal</a></li>
+                        <li><a href="#services">Site Preparation</a></li>
+                        <li><a href="#services">Water & Sewer Excavation</a></li>
+                        <li><a href="#services">Septic Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 1150 Freeman Avenue SW, Grand Rapids, MI 49503</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:616-262-1301" style="color:inherit;text-decoration:none">(616) 262-1301</a></li>
+                        <li><i class="fas fa-envelope"></i> info@affordable-excavating.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Affordable Excavating Inc. All Rights Reserved. | <a href="#" style="color:var(--secondary);text-decoration:underline">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const toggleIcon = question.querySelector('.faq-toggle i');
+                
+                faqItem.classList.toggle('active');
+                
+                if (faqItem.classList.contains('active')) {
+                    toggleIcon.classList.remove('fa-plus');
+                    toggleIcon.classList.add('fa-minus');
+                } else {
+                    toggleIcon.classList.remove('fa-minus');
+                    toggleIcon.classList.add('fa-plus');
+                }
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Set active navigation link based on scroll position
+        const sections = document.querySelectorAll('section');
+        const navItems = document.querySelectorAll('.nav-links a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                if(pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if(item.getAttribute('href').slice(1) === current) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
